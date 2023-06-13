@@ -33,7 +33,7 @@ export default {
 </script>
 
 <template>
-  <h1>editora</h1>
+  <h1>Editora</h1>
   <hr />
   <div class="form">
     <input type="text" v-model="editora.descricao" placeholder="Descrição" />
@@ -43,7 +43,7 @@ export default {
   <ul>
     <li v-for="editora in editoras" :key="editora.id">
       <span @click="editar(editora)">
-        ({{ editora.id }}) - {{ editora.descricao }} -
+        ({{ editora.id }}) - {{ editora.nome }} -
       </span>
       <button @click="excluir(editora)">X</button>
     </li>
