@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import LivroView from '../views/LivroView.vue';
 import CategoriaView from '../views/CategoriaView.vue';
 import EditoraView from '../views/EditoraView.vue';
-
+import AutorView from '../views/AutorView.vue';
 
 
 const router = createRouter({
@@ -28,6 +28,11 @@ const router = createRouter({
       path: '/editoras',
       name: 'editoras',
       component: EditoraView,
+    },
+    {
+      path: '/autores',
+      name: 'autores',
+      component: AutorView,
     },
   ],
 });
