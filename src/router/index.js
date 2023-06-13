@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
-import CategoriaView from '../views/CategoriaView.vue';
 import LivroView from '../views/LivroView.vue';
+import CategoriaView from '../views/CategoriaView.vue';
+import EditoraView from '../views/EditoraView.vue';
+
 
 
 const router = createRouter({
@@ -21,6 +23,11 @@ const router = createRouter({
       path: '/livros',
       name: 'livros',
       component: LivroView,
+    },
+    {
+      path: '/editoras',
+      name: 'editoras',
+      component: EditoraView,
     },
   ],
 });
